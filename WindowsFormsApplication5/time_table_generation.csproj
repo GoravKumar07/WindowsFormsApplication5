@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{335F9297-8142-4456-8969-405173E3BB86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication5</RootNamespace>
+    <AssemblyName>WindowsFormsApplication5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D478C46F1B17320F5CAC19B82664A013BE9374DD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>time_table_generation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Change_pswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Change_pswd.Designer.cs">
+      <DependentUpon>Admin_Change_pswd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_search.Designer.cs">
+      <DependentUpon>Admin_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page.Designer.cs">
+      <DependentUpon>Admin_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_additions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_additions.Designer.cs">
+      <DependentUpon>Admin_additions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mrs._Arunima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mrs._Arunima.Designer.cs">
+      <DependentUpon>Mrs._Arunima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mr._Ranjeet_Singh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mr._Ranjeet_Singh.Designer.cs">
+      <DependentUpon>Mr._Ranjeet_Singh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mr._Harpreet_Singh_Sodhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mr._Harpreet_Singh_Sodhi.Designer.cs">
+      <DependentUpon>Mr._Harpreet_Singh_Sodhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mr._R._S._Walia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mr._R._S._Walia.Designer.cs">
+      <DependentUpon>Mr._R._S._Walia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mrs_Amandeep_Kaur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mrs_Amandeep_Kaur.Designer.cs">
+      <DependentUpon>Mrs_Amandeep_Kaur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_time_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_time_table.Designer.cs">
+      <DependentUpon>Student_time_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_t_time_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_t_time_table.Designer.cs">
+      <DependentUpon>Show_t_time_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_time_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_time_table.Designer.cs">
+      <DependentUpon>Teacher_time_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_change_pswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_change_pswd.Designer.cs">
+      <DependentUpon>Teacher_change_pswd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_change_pswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_change_pswd.Designer.cs">
+      <DependentUpon>Student_change_pswd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Login.Designer.cs">
+      <DependentUpon>Student_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Login.Designer.cs">
+      <DependentUpon>Teacher_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.Designer.cs">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Registration.Designer.cs">
+      <DependentUpon>Teacher_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Registration.Designer.cs">
+      <DependentUpon>Student_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Details.Designer.cs">
+      <DependentUpon>Admin_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_student_Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_student_Database.Designer.cs">
+      <DependentUpon>Admin_student_Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_teacher_database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_teacher_database.Designer.cs">
+      <DependentUpon>Admin_teacher_database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Time_Table_Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time_Table_Project.Designer.cs">
+      <DependentUpon>Time_Table_Project.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Change_pswd.resx">
+      <DependentUpon>Admin_Change_pswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_search.resx">
+      <DependentUpon>Admin_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page.resx">
+      <DependentUpon>Admin_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_additions.resx">
+      <DependentUpon>Admin_additions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mrs._Arunima.resx">
+      <DependentUpon>Mrs._Arunima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mr._Ranjeet_Singh.resx">
+      <DependentUpon>Mr._Ranjeet_Singh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mr._Harpreet_Singh_Sodhi.resx">
+      <DependentUpon>Mr._Harpreet_Singh_Sodhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mr._R._S._Walia.resx">
+      <DependentUpon>Mr._R._S._Walia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mrs_Amandeep_Kaur.resx">
+      <DependentUpon>Mrs_Amandeep_Kaur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_time_table.resx">
+      <DependentUpon>Student_time_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_t_time_table.resx">
+      <DependentUpon>Show_t_time_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_time_table.resx">
+      <DependentUpon>Teacher_time_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_change_pswd.resx">
+      <DependentUpon>Teacher_change_pswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_change_pswd.resx">
+      <DependentUpon>Student_change_pswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Login.resx">
+      <DependentUpon>Student_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Login.resx">
+      <DependentUpon>Teacher_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Login.resx">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Registration.resx">
+      <DependentUpon>Teacher_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Registration.resx">
+      <DependentUpon>Student_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Details.resx">
+      <DependentUpon>Admin_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_student_Database.resx">
+      <DependentUpon>Admin_student_Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_teacher_database.resx">
+      <DependentUpon>Admin_teacher_database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Time_Table_Project.resx">
+      <DependentUpon>Time_Table_Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="time_table_generation_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigstock-Stack-Of-Books-70033240.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light-blue-background-2-cool-wallpaper-background-and-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-footage-green-background-with-floral-elements.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-icon-1106111526.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.gif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-footage-love-banner-heart-with-growing-vines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\教师.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea138472dd5bd4b51d63ebbf976f0ac6Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studentIcon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-icon-wallpaper-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security-icon-big.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stu_login.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
